@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+#subir {
+    font-size: 40px;
+    position: fixed;
+    z-index: 9;
+    bottom: 15px;
+    right: 15px;
+    background-color: white;
+    color: rgba(75, 131, 75, .9);
+    cursor: pointer;
+    border-radius: 25px;
+    opacity: .7;
+}
+
+#subir:hover {
+    opacity: 1;
+}
+
+header {
+    height: 150px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+#btnmenu {
+    display: none;
+}
+
+.compra {
+    width: 100%;
+    background-color: rgb(107, 107, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 90px;
+    font-size: 18px;
+    color: white;
+}
+
+.compra #gris {
+    color: rgb(187, 187, 187);
+}
+
+.compra #gris i {
+    color: white;
+}
+
+.compra #gris i:hover {
+    color: rgb(255, 255, 130);
+}
+
+.compra #gris span {
+    font-size: small;
+    position: absolute;
+    top: 3px;
+    color: yellow;
+}
+
+.espaciolg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.espaciolg img {
+    height: 60px;
+}
+
+.espaciolg .contacto {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.espaciolg .contacto .izq {
+    width: 180px;
+    border-right: 1px solid;
+}
+
+.espaciolg .contacto .der {
+    width: 120px;
+}
+
+.espaciolg .contacto .der a:hover {
+    color: rgb(75, 131, 75);
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    height: 60px;
+    padding: 15px 0 15px 30px;
+    background-color: rgb(107, 107, 107);
+    position: absolute;
+    top: 94%;
+    left: 6%;
+    overflow: hidden;
+}
+
+.links .buscador {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7e7e7e;
+    border-radius: 25px;
+    position: relative;
+    transition: all .2s;
+}
+
+.links #srch {
+    height: 100%;
+    width: 0%;
+    padding: 0 20px;
+    background-color: #7e7e7e;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    display: none;
+    transition: all .1.5s ease;
+}
+
+.links #srch::placeholder {
+    color: white;
+}
+
+.links .buscador i {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    margin: 20px 20px;
+}
+
+.links .buscador:hover {
+    width: 300px;
+    transition: 1.2s;
+}
+
+.links .buscador:hover #srch {
+    display: block;
+    width: 100%;
+    transition: 3s;
+}
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    margin: 0px 20px;
+}
+
+.menu a:nth-child(2) {
+    color: yellow;
+}
+
+.menu a:hover {
+    color: yellow;
+}
+
+.fndgaleria {
+    width: 100%;
+    height: 350px;
+    background-image: url("../images/aguacates.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    color: white;
+}
+
+.fndgaleria h1 {
+    font-size: 32px;
+}
+
+.fndgaleria p {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.seccion {
+    width: 100%;
+    height: 40px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion a {
+    color: rgb(190, 190, 190);
+}
+
+.seccion a:hover {
+    color: #000;
+}
+
+.opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px auto;
+}
+
+.opciones h5 {
+    font-size: 22px;
+}
+
+.opciones h5:first-child {
+    border-bottom: 5px solid #525252;
+}
+
+.opciones h5:hover {
+    border-bottom: 5px solid rgb(75, 131, 75);
+}
+
+.todo {
+    margin-bottom: 50px;
+}
+
+.todo .insfotos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.todo .insfotos a img {
+    width: 240px;
+}
+
+.todo .insfotos figure {
+    overflow: hidden;
+    width: 340px;
+    height: 340px;
+    position: relative;
+    margin: auto;
+}
+
+.todo .insfotos figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.todo .insfotos figure .contendor {
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo .insfotos figure .contendor a h3:hover {
+    color: rgb(75, 131, 75);
+}
+
+.todo .insfotos figure .contendor p {
+    color: rgb(75, 131, 75);
+    font-size: 18px;
+}
+
+.todo .insfotos figure .contendor .btn a {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    margin: 10px;
+}
+
+.todo .insfotos figure .contendor .btn a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.todo .insfotos figure .contendor:hover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: #7e7e7e;
+}
+
+footer .arriba {
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 0;
+}
+
+footer .arriba h1,
+footer .arriba p,
+footer .arriba a {
+    color: white;
+}
+
+footer .arriba i {
+    color: #555454;
+}
+
+footer .arriba .farm .lugar,
+footer .arriba .farm .tiempo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+footer .arriba .farm .lugar i,
+footer .arriba .farm .tiempo i {
+    font-size: 28px;
+}
+
+footer .arriba .titenlaces {
+    width: 200px;
+    height: 220px;
+}
+
+footer .arriba .refe {
+    width: 320px;
+}
+
+footer .arriba .farm hr,
+footer .arriba .refe hr,
+footer .arriba .titenlaces hr {
+    width: 50px;
+    height: 3px;
+    border-color: yellow;
+    background-color: yellow;
+}
+
+footer .arriba .titenlaces .enlaces {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .arriba .farm .lugar a:hover,
+footer .arriba .titenlaces .enlaces a:hover {
+    color: yellow;
+}
+
+footer .arriba .refe p {
+    margin: 10px 0;
+}
+
+footer .arriba .refe button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/*PARTE BAJA DE FOOTER*/
+
+footer .bajo {
+    height: 70px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #525252;
+    color: rgb(167, 167, 167);
+}
+
+footer .bajo .tarjetas i {
+    margin-left: 10px;
+    font-size: 48px;
+}
+
+footer .bajo .redes {
+    display: flex;
+    gap: 10px;
+}
+
+footer .bajo .redes .circulo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 50%;
+    position: relative;
+}
+
+footer .bajo .redes .circulo i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .bajo .redes .circulo:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: white;
+}
+
+footer .bajo p {
+    text-align: right;
+}
+
+footer .bajo p a {
+    color: #7e7e7e;
+}
+
+footer .bajo p a:hover {
+    color: yellow;
+}
+
+.movil {
+    display: none;
+}
+
+@media screen and (max-width:390px) {
+    header {
+        display: none;
+    }
+
+    #subir {
+        font-size: 40px;
+        position: fixed;
+        z-index: 9;
+        bottom: 15px;
+        right: 15px;
+        background-color: white;
+        color: rgba(75, 131, 75, .9);
+        cursor: pointer;
+        border-radius: 25px;
+        opacity: .7;
+    }
+
+    .movil .contacto {
+        position: relative;
+        width: 50px;
+    }
+
+    .movil .contacto #gris i {
+        color: rgb(5, 5, 5);
+        font-size: 24px;
+    }
+
+    .movil .contacto #gris i:hover {
+        color: yellow;
+    }
+
+    .movil .contacto span {
+        font-size: small;
+        position: absolute;
+        top: 3px;
+        color: yellow;
+    }
+
+    .movil .contacto .cont {
+        position: absolute;
+        background-color: rgb(112, 112, 112);
+        box-shadow: 0px 0px 5px #000;
+        border: 1px solid rgba(0, 0, 0, .3);
+        clip-path: polygon(0 100%, 100% 100%, 100% 19%, 95% 19%, 88% 0, 69% 19%, 0 19%);
+        width: 200px;
+        height: 100px;
+        top: 138%;
+        right: -400%;
+        text-align: right;
+        padding: 20px 0 0 0;
+        display: none;
+        transition: all 1s;
+    }
+
+    .movil .contacto .cont.mostrar {
+        right: -2%;
+        display: block;
+        transition: right .7s;
+
+    }
+
+    .movil .contacto .cont .izq {
+        border-right: none;
+    }
+
+    .movil {
+        display: block;
+    }
+
+    .movil .espaciolg #btn {
+        order: inherit;
+    }
+
+    .movil #btn {
+        display: block;
+        order: 4;
+        font-size: 32px;
+    }
+
+    .movil #btndots {
+        font-size: 32px;
+    }
+
+    .movil .links {
+        top: 15%;
+        left: -100%;
+        background-color: white;
+        border-radius: 0;
+        color: #000;
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 250px;
+        height: 100%;
+    }
+
+    .movil .links .menu a {
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid;
+        color: #000;
+    }
+
+    .movil .links .menu a:hover {
+        color: yellow;
+        background-color: rgb(75, 131, 75);
+    }
+
+    .movil .links .menu a:last-child {
+        color: yellow;
+        background-color: rgb(75, 131, 75);
+    }
+
+    .movil .links .buscador {
+        order: 1;
+    }
+
+    .movil .links .buscador:hover {
+        width: 100%;
+    }
+
+    .movil nav.abrirmenu {
+        left: 0%;
+        transition: left 1.5s;
+    }
+
+    .compra {
+        display: none;
+    }
+
+    .todo .insfotos figure {
+        width: 90%;
+        margin: auto;
+    }
+
+    .datos {
+        height: fit-content;
+        gap: 35px;
+    }
+
+    footer {
+        height: fit-content;
+    }
+
+    footer .arriba {
+        height: fit-content;
+        margin: 0px 30px;
+        gap: 30px;
+    }
+
+    footer .arriba .titenlaces {
+        width: 300px;
+        height: 260px;
+        margin: 0 0 40px 0;
+    }
+
+    footer .arriba .refe {
+        height: fit-content;
+    }
+
+    footer .bajo {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer .bajo p {
+        text-align: center;
+    }
+}
