@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/galeria.css" />
+    <link rel="stylesheet" href="../css/hover.css" />
+    <link rel="stylesheet" href="../JS/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../css/animate.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74d6ebe007.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/jquery.min.js"></script>
+    <script src="../JS/fancybox/jquery.fancybox.js"></script>
+    <script src="../JSfancybox/jquery.fancybox.pack.js"></script>
+    <title>Galeria</title>
+  </head>
+  <body>
+    <i id="subir" class="fas fa-arrow-circle-up"></i>
+    <header>
+      <div class="compra">
+        <p>Opening hours: Monday - Friday: 08AM-06PM</p>
+        <p id="gris">
+          Your Cart is Empty
+          <a href="#"><i class="fa-solid fa-cart-shopping"> </i></a
+          ><span> 2</span>
+        </p>
+      </div>
+      <div class="espaciolg ancho">
+        <a href="../index.html">
+          <img src="../images/logorange.png" alt="" />
+        </a>
+        <div class="contacto">
+          <div class="izq">
+            <p>523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA</p>
+          </div>
+          <div class="der">
+            <a href="#">+1 (844) 123 456 78</a>
+            <a href="#">info@demolink.org</a>
+          </div>
+        </div>
+      </div>
+      <a href="#header" id="btnmenu"><i class="fa-solid fa-bars"></i></a>
+      <nav class="links ancho" id="links">
+        <div class="menu">
+          <a href="../index.html">HOME</a>
+          <a href="galeria.html">GALLERY</a>
+          <a href="#">PAGES</a>
+          <a href="#">BLOG</a>
+          <a href="#">SHOP</a>
+          <a href="contacto.html">CONTACT US</a>
+        </div>
+        <div class="buscador">
+          <input type="search" name="search" id="srch" placeholder="SEACH..." />
+          <div class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="movil">
+      <div class="espaciolg ancho">
+        <a href="#" id="btn"><i class="fa-solid fa-bars"></i></a>
+        <a href="../index.html">
+          <img src="../images/logorange.png" alt="" />
+        </a>
+        <div class="contacto">
+          <a href="#" id="gris"
+            ><i class="fa-solid fa-cart-shopping"> </i><span> 2</span>
+          </a>
+          <i class="fa-solid fa-ellipsis-vertical" id="btndots"></i>
+          <div class="cont" id="cajacont">
+            <div class="izq">
+              <p>523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA</p>
+            </div>
+            <div class="der">
+              <a href="#">+1 (844) 123 456 78</a>
+              <a href="#">info@demolink.org</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="links ancho" id="navMenu">
+        <div class="menu">
+          <a href="../index.html">HOME</a>
+          <a href="galeria.html">GALLERY</a>
+          <a href="#">PAGES</a>
+          <a href="#">BLOG</a>
+          <a href="#">SHOP</a>
+          <a href="contacto.html">CONTACT US</a>
+        </div>
+        <div class="buscador">
+          <input type="search" name="search" id="srch" placeholder="SEACH..." />
+          <div class="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="fndgaleria">
+      <h1>GALLERY</h1>
+      <p>
+        We are industry-leading organic farm delivering the best products <br />
+        that boost your daily life energy and potential.
+      </p>
+    </section>
+
+    <div class="seccion">
+      <a href="../index.html">HOME</a>
+      <i class="fa-solid fa-arrow-right"></i>
+      <p>GALLERY</p>
+    </div>
+
+    <div class="opciones ancho">
+      <h5>ALL</h5>
+      <h5>FRUITS</h5>
+      <h5>EXOTIC FRUITS</h5>
+    </div>
+
+    <section class="todo ancho">
+      <div class="insfotos" id="galeria">
+        <figure>
+          <img src="../images/gallery1.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h3>LEMONS</h4></a>
+            <p>$13.99</p>
+            <div class="btn">
+              <a href="../images/gallery1.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <img src="../images/gallery2.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h4>APPLES</h4></a>
+            <p>$11.99</p>
+            <div class="btn">
+              <a href="../images/gallery2.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+          </div>
+        </figure>
+        <figure>
+          <img src="../images/gallery3.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h4>GRAPES</h4></a>
+            <p>$10.99</p>
+            <div class="btn">
+              <a href="../images/gallery3.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+          </div>
+        </figure>
+        <figure>
+          <img src="../images/gallery4.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h4>GRAPEFRUITS</h4></a>
+            <p>$12.99</p>
+            <div class="btn">
+              <a href="../images/gallery4.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+          </div>
+        </figure>
+        <figure>
+          <img src="../images/gallery5.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h4>PEACHES</h4></a>
+            <p>$14.99</p>
+            <div class="btn">
+              <a href="../images/gallery5.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a></div>
+        </figure>
+        <figure>
+          <img src="../images/gallery6.jpg" alt="" />
+          <div class="contendor">
+            <a href="#"><h4>PINEAPPLE</h4></a>
+            <p>$17.99</p>
+            <div class="btn">
+              <a href="../images/gallery6.jpg" rel="gallery1" class="hvr-radial-in fancybox">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" class="hvr-radial-out"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <div class="arriba ancho">
+        <div class="wow animate__animated animate__fadeInLeft farm">
+          <h1>VISIT OUR FARM</h1>
+          <hr />
+          <div class="lugar">
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="#"
+              >523 Sylvan Ave, 5th Floor <br />
+              Mountain View, CA 94041 USA</a
+            >
+          </div>
+          <div class="tiempo">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              Weekdays: 08:00am - 08:00pm <br />
+              Weekends: 10:00am - 06:00pm
+            </p>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInDown titenlaces">
+          <h1>QUICK LINKS</h1>
+          <hr />
+          <div class="enlaces">
+            <a href="#"> History </a>
+            <a href="#"> FAQ </a>
+            <a href="#"> Farmers </a>
+            <a href="#"> Events </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Organic Fruits </a>
+            <a href="#"> Our Smoothies </a>
+            <a href="#"> Fruit Boxes </a>
+            <a href="#"> Yoghurts </a>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInRight refe">
+          <h1>GET IN TOUCH</h1>
+          <hr />
+          <p>
+            We are always ready to answer any questions you may have or help you
+            select organic fruits.
+          </p>
+          <button class="hvr-radial-in">SHOP NOW</button>
+          <button class="hvr-radial-out">CONTACT US</button>
+        </div>
+      </div>
+      <div class="wow animate__animated animate__backInDown bajo">
+        <div
+          class="wow animate__animated animate__lightSpeedInLeft tarjetas animate__delay-2s"
+        >
+          <i class="fa-brands fa-cc-visa"></i
+          ><i class="fa-brands fa-cc-mastercard"></i
+          ><i class="fa-brands fa-cc-paypal"></i>
+        </div>
+        <div
+          class="wow animate__animated animate__zoomIn redes animate__delay-2s"
+        >
+          <div class="circulo">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="circulo">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="circulo">
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+          <div class="circulo">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </div>
+          <div class="circulo">
+            <i class="fa-brands fa-skype"></i>
+          </div>
+        </div>
+        <p
+          class="wow animate__animated animate__lightSpeedInRight animate__delay-2s"
+        >
+          © 2023 Orange. All rights reserved. <br />
+          <a href="#">Privacy Policy.</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      $("#btn").click(function () {
+        $("#navMenu").toggleClass("abrirmenu");
+      });
+      $("#btndots").click(function () {
+        $("#cajacont").toggleClass("mostrar");
+      });
+
+      $("#subir").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: "0px",
+          },
+          1000
+        );
+      });
+      new WOW().init();
+    </script>
+  </body>
+</html>
